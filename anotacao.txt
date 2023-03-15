@@ -1,0 +1,31 @@
+"""
+-----------------------------LER UM ARQUIVO CSV COM PANDAS---------------------------------------
+sep = é onde passamos o parametro separador dp arquivo ( espaço , virgula , ponto e virgula etc)
+df = dataframe (tabela dentro do pandas)
+Para acessar o arquivo csv, ele tem que esta na mesma pasta do projeito , ou você precisará passar o
+caminho dele EX.:
+venda_df = pd.read(r'C:\Users\Usuário\PycharmProjects\AnalisedadosPandas')
+o r mostra para o panda que é um texto bruto, caminho todo.
+------------------------------------------------------------------------------------------------------------
+                                DataFrame
+    É como se fosse uma tabela.
+    * As colunas funcionam como chave de dicionário
+    * As linhas funcionam listas
+
+  Temos um dataframe chamado vendas_df
+
+vendas_df['coluna_x'] -> uma lista com os valores da coluna_x (em formato dataframe, é um dataframe com 1 coluna só)
+
+vendas_df[0] -> NÃO FUNCIONA ASSIM PARA DATAFRAMES
+
+vendas_df[:3] -> pega até a linha de índice 3 do dataframe
+
+vendas_df[['coluna_x', 'coluna_y', 'coluna_z']] -> cria um novo dataframe com as colunas coluna_x, coluna_y e coluna_z
+
+vendas_df['coluna_x'][0] -> pega o itemd a 1ª linha da coluna coluna_x
+
+
+
+
+
+"""
