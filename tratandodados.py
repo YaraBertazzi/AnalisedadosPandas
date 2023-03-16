@@ -35,3 +35,6 @@ vendas_df = vendas_df.merge(clientes_df, on='ID Cliente')
 
 print(vendas_df)
 
+# renomear o nome da coluna (pasa o nome da coluna que ser amodificada o nome , dentro dos parente de rename em dicionario [nome antigo: nome novo])
+vendas_df = vendas_df.rename(columns={'E-mail': 'E-mail do Cliente'})
+print(vendas_df)
